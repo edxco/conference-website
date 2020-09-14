@@ -1,24 +1,212 @@
 @import "font";
 @import "colors";
 @import "sizes";
+@import "animation";
 
 /* General */
 body {
-    @include font('Cocogoose', '../fonts/Cocogoose');
+    font-family: $regular-font;
     color: $color-one;
+}
+
+/* General Margins and Paddings */
+.ms-auto {
+    margin: 0 30px;
+}
+
+.center-element {
+    margin: 0 auto;
+}
+
+button {
+    font-family: $coco-font;
+}
+
+/* Colors */
+.bg-one {
+    background-color: $color-one;
+}
+
+.bg-two {
+    background-color: $orange;
+}
+
+.bg-three {
+    background-color: $grey;
 }
 
 .bg-t {
     background: linear-gradient(45deg, blue, red);
 }
 
+.color-1 {
+    color: $color-one;
+}
+
+.color-2 {
+    color: $orange;
+}
+
+/* Text */
+h1,
+h2,
+h3,
+h4 {
+    font-family: $coco-font;
+}
+
+.fs-1-1 {
+    font-size: 1.1em;
+}
+
+.fs-1-3 {
+    font-size: 1.3em;
+}
+
+.title-section {
+    font-family: $regular-font;
+
+    @media (min-width: 768px) {
+        font-weight: 700;
+    }
+}
+
+.title-section::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    padding-top: 5px;
+    border-bottom: 2px solid $orange;
+}
+
+.text {
+    color: $grey;
+    font-size: $f14;
+    line-height: 18px;
+}
+
+
 /* Navbar */
-.logo-nav {
-    width: 10em;
+header {
+    font-family: $regular-font;
+    font-weight: 400;
 }
 
-.nav-h {
-    height: $nav-height;
+nav {
+    a {
+        color: $color-one;
+    }
+
+    .logo {
+        width: 10em;
+    }
+
+    .nav-h {
+        height: $nav-height;
+    }
 }
 
+.f16 {
+    font-size: $f18;
+    @include regular-font-w(600);
+}
 
+.join-us {
+    font-family: $coco-font;
+    font-size: $f16;
+    background-color: $orange;
+
+    a:hover {
+        background-color: $color-one;
+    }
+}
+
+/* program section */
+#program-section {
+    background-color: $color-one;
+    background-image: url("../img/bg-t.png");
+    background-repeat: repeat;
+    background-size: 80%;
+}
+
+.container-prog {
+    @media (max-width: 576px) {
+        /*breakpoint*/
+        flex-direction: column;
+    }
+}
+
+.program {
+    /*grow*/
+    flex: 1;
+    background: url("../img/bg_transparent.png");
+
+    img {
+        width: 50px;
+    }
+
+    h3 {
+        @include regular-font-w(600);
+        font-size: $f17;
+
+        @media (min-width: 768px) {
+            font-size: $f20;
+            height: 50px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    h3 a {
+        color: $orange;
+    }
+}
+
+/* Speaker section */
+.card-img {
+    height: 74px;
+    width: 74px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.speakers {
+    font-family: $regular-font;
+
+    .name {
+        font-size: $f24;
+        font-weight: 700;
+    }
+
+    .job {
+        font-size: $f14;
+        font-weight: 700;
+        font-style: italic;
+        color: $orange;
+    }
+
+    .job::after {
+        content: "";
+        display: block;
+        width: 11%;
+        padding-top: 20px;
+        border-bottom: 2px solid $grey;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
