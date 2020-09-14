@@ -1,0 +1,21 @@
+/* General */
+body {
+  color: #272A31; }
+
+@font-face {
+  body {
+    font-family: "Cocogoose";
+    src: url("../fonts/Cocogoose.eot");
+    src: url("../fonts/Cocogoose.eot?#iefix") format("embedded-opentype"), url("../fonts/Cocogoose.woff") format("woff"), url("../fonts/Cocogoose.ttf") format("truetype"), url("../fonts/Cocogoose.svg#Cocogoose") format("svg");
+    font-weight: normal;
+    font-style: normal; } }
+
+.bg-t {
+  background: linear-gradient(45deg, blue, red); }
+
+/* Navbar */
+.logo-nav {
+  width: 10em; }
+
+.nav-h {
+  height: 65px; }

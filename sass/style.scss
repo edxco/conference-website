@@ -1,0 +1,24 @@
+@import "font";
+@import "colors";
+@import "sizes";
+
+/* General */
+body {
+    @include font('Cocogoose', '../fonts/Cocogoose');
+    color: $color-one;
+}
+
+.bg-t {
+    background: linear-gradient(45deg, blue, red);
+}
+
+/* Navbar */
+.logo-nav {
+    width: 10em;
+}
+
+.nav-h {
+    height: $nav-height;
+}
+
+
