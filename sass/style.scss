@@ -199,6 +199,18 @@ nav {
     }
 }
 
+/* Partner */
+.partner-img {
+    height: 16px;
+    @media (min-width: 768px) {
+        height: 24px;
+    }
+    @media (min-width: 1200px) {
+        height: 36px;
+    }
+}
+
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 

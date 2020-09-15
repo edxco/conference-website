@@ -172,3 +172,13 @@ nav .nav-h {
     width: 11%;
     padding-top: 10px;
     border-bottom: 2px solid #D3D3D3; }
+
+/* Partner */
+.partner-img {
+  height: 16px; }
+  @media (min-width: 768px) {
+    .partner-img {
+      height: 24px; } }
+  @media (min-width: 1200px) {
+    .partner-img {
+      height: 36px; } }
