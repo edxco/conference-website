@@ -21,6 +21,14 @@
   100% {
     background-position: 0% 50%; } }
 
+/* Join section */
+.stripes {
+  background: url("../img/bg-stripes.jpg");
+  background-size: 25%; }
+
+.prop-table {
+  font-size: 12px; }
+
 /* General */
 body {
   font-family: "Lato", sans-serif;
