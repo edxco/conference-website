@@ -1,51 +1,52 @@
 @import "font";
 @import "colors";
-@import "sizes";
 @import "animation";
 @import "join";
 
+$nav-height: 65px;
+
 /* General */
 body {
-    font-family: $regular-font;
-    color: $color-one;
+  font-family: $regular-font;
+  color: $color-one;
 }
 
 /* General Margins and Paddings */
 .ms-auto {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 
 .center-element {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 button {
-    font-family: $coco-font;
+  font-family: $coco-font;
 }
 
 /* Colors */
 .bg-one {
-    background-color: $color-one;
+  background-color: $color-one;
 }
 
 .bg-two {
-    background-color: $orange;
+  background-color: $orange;
 }
 
 .bg-three {
-    background-color: $grey;
+  background-color: $grey;
 }
 
 .bg-t {
-    background: linear-gradient(45deg, blue, red);
+  background: linear-gradient(45deg, blue, red);
 }
 
 .color-1 {
-    color: $color-one;
+  color: $color-one;
 }
 
 .color-2 {
-    color: $orange;
+  color: $orange;
 }
 
 /* Text */
@@ -53,300 +54,304 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: $coco-font;
+  font-family: $coco-font;
 }
 
 .fs-1-1 {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .fs-1-3 {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 .title-section {
-    font-family: $regular-font;
-    font-size: $f24;
-    @media (min-width: 768px) {
-        font-weight: 700;
-        font-size: 2.3em;
-    }
+  font-family: $regular-font;
+  font-size: $f24;
+
+  @media (min-width: 768px) {
+    font-weight: 700;
+    font-size: 2.3em;
+  }
 }
 
 .title-section::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 10%;
-    padding-top: 5px;
-    border-bottom: 2px solid $orange;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  padding-top: 5px;
+  border-bottom: 2px solid $orange;
 }
 
 .text {
-    color: $grey;
-    font-size: $f14;
-    line-height: 18px;
+  color: $grey;
+  font-size: $f14;
+  line-height: 18px;
 }
-
 
 /* Navbar */
 header {
-    font-family: $regular-font;
-    font-weight: 400;
+  font-family: $regular-font;
+  font-weight: 400;
 }
 
 nav {
-    a {
-        color: $color-one;
-    }
+  a {
+    color: $color-one;
+  }
 
-    .logo {
-        height: 50px;
-    }
+  .logo {
+    height: 50px;
+  }
 
-    .nav-h {
-        height: $nav-height;
-    }
+  .nav-h {
+    height: $nav-height;
+  }
 }
 
 .f16 {
-    font-size: $f18;
-    @include regular-font-w(600);
+  font-size: $f18;
+
+  @include regular-font-w(600);
 }
 
 .join-us {
-    font-family: $coco-font;
-    font-size: $f16;
-    background-color: $orange;
+  font-family: $coco-font;
+  font-size: $f16;
+  background-color: $orange;
 
-    a:hover {
-        background-color: $color-one;
-    }
+  a:hover {
+    background-color: $color-one;
+  }
 }
 
 /* Slider */
 .slider-h {
-    height: 400px;
+  height: 400px;
 }
 
 @mixin slider-prop($property, $height, $height-md, $height-xl) {
-    height: 400px;
-    background-image: url($property);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: auto $height;
-    @media (min-width: 768px) { 
-        background-position: right;
-        background-size: auto $height-md;
-    }
-    @media (min-width: 992px) { 
-        background-position: right;
-    }
-    @media (min-width: 1200px) { 
-        background-position: right;
-        background-size: auto $height-xl;
-    }
+  height: 400px;
+  background-image: url($property);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto $height;
+
+  @media (min-width: 768px) {
+    background-position: right;
+    background-size: auto $height-md;
+  }
+
+  @media (min-width: 992px) {
+    background-position: right;
+  }
+
+  @media (min-width: 1200px) {
+    background-position: right;
+    background-size: auto $height-xl;
+  }
 }
 
 .slider-g1 {
-    @include slider-prop("../img/slider1.png", 300px, 390px, 430px);
+  @include slider-prop("../img/slider1.png", 300px, 390px, 430px);
 }
 
 .slider-g2 {
-    @include slider-prop("../img/slider2.png", 320px, 435px, 450px);
+  @include slider-prop("../img/slider2.png", 320px, 435px, 450px);
 }
 
 .slider-g3 {
-    @include slider-prop("../img/slider3.png", 320px, 420px, 420px);
-    background-size: auto 300px;
+  @include slider-prop("../img/slider3.png", 320px, 420px, 420px);
+
+  background-size: auto 300px;
 }
 
 .slider-h2 {
-    font-family: $regular-font;
-    font-size: 1.5em;
-    @media (min-width: 768px) {
-        font-size: 2em;
-    }
+  font-family: $regular-font;
+  font-size: 1.5em;
+
+  @media (min-width: 768px) {
+    font-size: 2em;
+  }
 }
 
 .bg-about {
-    background: url("../img/bg-about.png"), no-repeat;
-    background-size: cover;
-    background-position: top;
+  background: url("../img/bg-about.png"), no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .slider-text {
-    font-family: $coco-font;
-    font-size: 2.2em;
-    line-height: 45px;
-    text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.88);
-    @media (min-width: 768px) { 
-        font-size: 3.3em;
-        line-height: 75px;
-    }
-    @media (min-width: 992px) {
-        margin-top: 90px;
-        font-size: 3.9em;
-    }
-    @media (min-width: 1200px) {
-        margin-top: 80px;
-        font-size: 5.2em;
-        line-height: 88px;
-    }
-} 
+  font-family: $coco-font;
+  font-size: 2.2em;
+  line-height: 45px;
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.88);
+
+  @media (min-width: 768px) {
+    font-size: 3.3em;
+    line-height: 75px;
+  }
+
+  @media (min-width: 992px) {
+    margin-top: 90px;
+    font-size: 3.9em;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 80px;
+    font-size: 5.2em;
+    line-height: 88px;
+  }
+}
 
 .slider-ad {
-    background: url("../img/bg_transparentw.png");
+  background: url("../img/bg_transparentw.png");
 }
 
 /* program section */
 #program-section {
-    background-color: $color-one;
-    background-image: url("../img/bg-t.png");
-    background-repeat: repeat;
-    background-size: 80%;
+  background-color: $color-one;
+  background-image: url("../img/bg-t.png");
+  background-repeat: repeat;
+  background-size: 80%;
 }
 
 .container-prog {
-    @media (max-width: 576px) {
-        /*breakpoint*/
-        flex-direction: column;
-    }
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 }
 
 .program {
-    /*grow*/
-    flex: 1;
-    background: url("../img/bg_transparent.png");
+  flex: 1;
+  background: url("../img/bg_transparent.png");
 
-    img {
-        width: 50px;
+  img {
+    width: 50px;
+  }
+
+  h3 {
+    @include regular-font-w(600);
+
+    font-size: $f17;
+
+    @media (min-width: 768px) {
+      font-size: $f20;
+      height: 50px;
+      display: table-cell;
+      vertical-align: middle;
     }
-
-    h3 {
-        @include regular-font-w(600);
-        font-size: $f17;
-
-        @media (min-width: 768px) {
-            font-size: $f20;
-            height: 50px;
-            display: table-cell;
-            vertical-align: middle;
-        }
-    }
-
-    h3 a {
-        color: $orange;
-    }
+  }
+/* stylelint-disable */
+  h3 a {
+    color: $orange;
+  }
+/* stylelint-enable */
 }
 
 .about-res {
-    background: url("../img/about-res.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
+  background: url("../img/about-res.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
 }
 
 /* Speaker section */
 .card-img {
-    height: 74px;
-    width: 74px;
-    cursor: pointer;
+  height: 74px;
+  width: 74px;
+  cursor: pointer;
 
-    img {
-        width: 100%;
-        object-fit: cover;
-    }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .speakers {
-    font-family: $regular-font;
+  font-family: $regular-font;
 
-    .name {
-        font-size: $f24;
-        font-weight: 700;
-    }
+  .name {
+    font-size: $f24;
+    font-weight: 700;
+  }
 
-    .job {
-        font-size: $f14;
-        font-weight: 700;
-        font-style: italic;
-        color: $orange;
-    }
+  .job {
+    font-size: $f14;
+    font-weight: 700;
+    font-style: italic;
+    color: $orange;
+  }
 
-    .job::after {
-        content: "";
-        display: block;
-        width: 11%;
-        padding-top: 10px;
-        border-bottom: 2px solid $grey;
-    }
+  .job::after {
+    content: "";
+    display: block;
+    width: 11%;
+    padding-top: 10px;
+    border-bottom: 2px solid $grey;
+  }
 }
 
 .past1 {
-    background: url("../img/past1.jpg"), no-repeat;
-    height: 220px;
-    background-size: cover;
-    margin-bottom: 20px;
-    padding-top: 30px;
+  background: url("../img/past1.jpg"), no-repeat;
+  height: 220px;
+  background-size: cover;
+  margin-bottom: 20px;
+  padding-top: 30px;
 }
 
 .past2 {
-    background: url("../img/past2.jpg"), no-repeat;
-    height: 220px;
-    background-size: cover;
-    margin-bottom: 20px;
-    padding-top: 30px;
+  background: url("../img/past2.jpg"), no-repeat;
+  height: 220px;
+  background-size: cover;
+  margin-bottom: 20px;
+  padding-top: 30px;
 }
 
 /* Partner */
 .partner-img {
-    height: 16px;
-    @media (min-width: 768px) {
-        height: 18px;
-    }
-    @media (min-width: 992px) {
-        height: 22px;
-    }
-    @media (min-width: 1200px) {
-        height: 36px;
-    }
+  height: 16px;
+
+  @media (min-width: 768px) {
+    height: 18px;
+  }
+
+  @media (min-width: 992px) {
+    height: 22px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 36px;
+  }
 }
 
 /* Footer */
 .footer-img {
-    width: 120px;
-    @media (min-width: 768px) {
-        width: 160px;
-    }
+  width: 120px;
+
+  @media (min-width: 768px) {
+    width: 160px;
+  }
 }
 
 footer {
-    font-size: $f10;
-    @media (min-width: 768px) {
-        font-size: $f12;
-    }
-    @media (min-width: 992px) {
-        font-size: $f14;
-    }
-    .copy {
-        font-family: $coco-font;
-    }
-    .description {
-        font-family: $regular-font;
-    }
+  font-size: $f10;
+
+  @media (min-width: 768px) {
+    font-size: $f12;
+  }
+
+  @media (min-width: 992px) {
+    font-size: $f14;
+  }
+
+  .copy {
+    font-family: $coco-font;
+  }
+
+  .description {
+    font-family: $regular-font;
+  }
 }
-
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}

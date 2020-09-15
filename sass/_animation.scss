@@ -1,18 +1,20 @@
 #screen {
-	background: linear-gradient(-45deg, #fff, #D8D8D8, #787878, #9F9F9F);
-	background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 600px;
+  background: linear-gradient(-45deg, #fff, #d8d8d8, #787878, #9f9f9f);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 600px;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

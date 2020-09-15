@@ -8,7 +8,7 @@
   src: url("../fonts/CocogoosePro-Thin.eot?") format("eot"), url("../fonts/CocogoosePro-Thin.woff2") format("woff2"), url("../fonts/CocogoosePro-Thin.woff") format("woff"), url("../fonts/CocogoosePro-Thin.ttf") format("truetype"), url("../fonts/CocogoosePro-Thin.svg#Cocogoose-Thin") format("svg"); }
 
 #screen {
-  background: linear-gradient(-45deg, #fff, #D8D8D8, #787878, #9F9F9F);
+  background: linear-gradient(-45deg, #fff, #d8d8d8, #787878, #9f9f9f);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 600px; }
@@ -27,7 +27,7 @@
 /* General */
 body {
   font-family: "Lato", sans-serif;
-  color: #272A31; }
+  color: #272a31; }
 
 /* General Margins and Paddings */
 .ms-auto {
@@ -37,33 +37,33 @@ body {
   margin: 0 auto; }
 
 button {
-  font-family: "Cocogoose", Arial, Helvetica, sans-serif; }
+  font-family: "Cocogoose", arial, helvetica, sans-serif; }
 
 /* Colors */
 .bg-one {
-  background-color: #272A31; }
+  background-color: #272a31; }
 
 .bg-two {
-  background-color: #EC5242; }
+  background-color: #ec5242; }
 
 .bg-three {
-  background-color: #D3D3D3; }
+  background-color: #d3d3d3; }
 
 .bg-t {
   background: linear-gradient(45deg, blue, red); }
 
 .color-1 {
-  color: #272A31; }
+  color: #272a31; }
 
 .color-2 {
-  color: #EC5242; }
+  color: #ec5242; }
 
 /* Text */
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Cocogoose", Arial, Helvetica, sans-serif; }
+  font-family: "Cocogoose", arial, helvetica, sans-serif; }
 
 .fs-1-1 {
   font-size: 1.1em; }
@@ -85,10 +85,10 @@ h4 {
   margin: 0 auto;
   width: 10%;
   padding-top: 5px;
-  border-bottom: 2px solid #EC5242; }
+  border-bottom: 2px solid #ec5242; }
 
 .text {
-  color: #D3D3D3;
+  color: #d3d3d3;
   font-size: 14px;
   line-height: 18px; }
 
@@ -98,7 +98,7 @@ header {
   font-weight: 400; }
 
 nav a {
-  color: #272A31; }
+  color: #272a31; }
 
 nav .logo {
   height: 50px; }
@@ -112,11 +112,11 @@ nav .nav-h {
   font-weight: 600; }
 
 .join-us {
-  font-family: "Cocogoose", Arial, Helvetica, sans-serif;
+  font-family: "Cocogoose", arial, helvetica, sans-serif;
   font-size: 16px;
-  background-color: #EC5242; }
+  background-color: #ec5242; }
   .join-us a:hover {
-    background-color: #272A31; }
+    background-color: #272a31; }
 
 /* Slider */
 .slider-h {
@@ -190,7 +190,7 @@ nav .nav-h {
   background-position: top; }
 
 .slider-text {
-  font-family: "Cocogoose", Arial, Helvetica, sans-serif;
+  font-family: "Cocogoose", arial, helvetica, sans-serif;
   font-size: 2.2em;
   line-height: 45px;
   text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.88); }
@@ -213,20 +213,20 @@ nav .nav-h {
 
 /* program section */
 #program-section {
-  background-color: #272A31;
+  background-color: #272a31;
   background-image: url("../img/bg-t.png");
   background-repeat: repeat;
   background-size: 80%; }
 
 @media (max-width: 576px) {
   .container-prog {
-    /*breakpoint*/
     flex-direction: column; } }
 
 .program {
-  /*grow*/
   flex: 1;
-  background: url("../img/bg_transparent.png"); }
+  background: url("../img/bg_transparent.png");
+  /* stylelint-disable */
+  /* stylelint-enable */ }
   .program img {
     width: 50px; }
   .program h3 {
@@ -240,7 +240,7 @@ nav .nav-h {
         display: table-cell;
         vertical-align: middle; } }
   .program h3 a {
-    color: #EC5242; }
+    color: #ec5242; }
 
 .about-res {
   background: url("../img/about-res.jpg");
@@ -267,13 +267,13 @@ nav .nav-h {
     font-size: 14px;
     font-weight: 700;
     font-style: italic;
-    color: #EC5242; }
+    color: #ec5242; }
   .speakers .job::after {
     content: "";
     display: block;
     width: 11%;
     padding-top: 10px;
-    border-bottom: 2px solid #D3D3D3; }
+    border-bottom: 2px solid #d3d3d3; }
 
 .past1 {
   background: url("../img/past1.jpg"), no-repeat;
@@ -318,6 +318,6 @@ footer {
     footer {
       font-size: 14px; } }
   footer .copy {
-    font-family: "Cocogoose", Arial, Helvetica, sans-serif; }
+    font-family: "Cocogoose", arial, helvetica, sans-serif; }
   footer .description {
     font-family: "Lato", sans-serif; }

@@ -3,13 +3,13 @@
 // =============================================================================
 
 @function str-replace($string, $search, $replace: "") {
-	$index: str-index($string, $search);
+  $index: str-index($string, $search);
 
-	@if $index {
-		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-	}
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
 
-	@return $string;
+  @return $string;
 }
 
 // =============================================================================
@@ -17,41 +17,42 @@
 // =============================================================================
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-	$src: null;
+  $src: null;
 
-	$extmods: (
-		eot: "?",
-		svg: "#" + str-replace($name, " ", "_")
-	);
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
 
-	$formats: (
-		otf: "opentype",
-		ttf: "truetype"
-	);
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
 
-	@each $ext in $exts {
-		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-	}
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
 
-	@font-face {
-		font-family: quote($name);
-		font-style: $style;
-		font-weight: $weight;
-		src: $src;
-	}
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
 }
 
 @include font-face("Cocogoose", "../fonts/Cocogoose");
 @include font-face("Cocogoose-Thin", "../fonts/CocogoosePro-Thin");
 
-$coco-font: 'Cocogoose', Arial, Helvetica, sans-serif;
-$thin-font: 'Cocogoose-Thin', Arial, Helvetica, sans-serif;
+$coco-font: 'Cocogoose', arial, helvetica, sans-serif;
+$thin-font: 'Cocogoose-Thin', arial, helvetica, sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 $regular-font: 'Lato', sans-serif;
+
 @mixin regular-font-w($property) {
   font-family: 'Lato', sans-serif;
   font-weight: $property;
