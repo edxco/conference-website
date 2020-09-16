@@ -8,16 +8,14 @@ Responsive site for a client providing a design guideline for their brand:
 * Best HTMl, CSS and GitHub practices.
 * Use of Sass
 
-![screenshot](https://github.com/edxco/conference-website/blob/design/img/screen.gif)
+![screenshot](https://github.com/edxco/conference-website/blob/design/img/screenshot.jpg)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- HTML, CSS
-
-## Style with
-
+- HTML
+- Sass
 - Bootstrap
 
 ## Live Demo
@@ -32,18 +30,20 @@ Additional description about the project and its features.
 - Twitter: [@lalo_nbc](https://twitter.com/lalo_nbc)
 - Linkedin: [linkedin](https://www.linkedin.com/in/eduardo-n-baeza/)
 
-## 🤝 Contributing
+## Acknowledgment
 
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
+- Layout design by Cindy Shin (https://www.behance.net/gallery/29845175/CC-Global-Summit-2015]
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## 🤝 Contributing
-Contributions, issues and feature requests are welcome! Start by:
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+Start by:
 
 Forking the project
 
