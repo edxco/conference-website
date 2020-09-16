@@ -6,8 +6,9 @@ Responsive site for a client providing a design guideline for their brand:
 
 * Colours, layouts and design guidelines.
 * Best HTMl, CSS and GitHub practices.
+* Use of Sass
 
-![screenshot](https://github.com/edxco/newsweek/blob/bootstrap/img/news-screen.png)
+![screenshot](https://github.com/edxco/conference-website/blob/design/img/screen.gif)
 
 Additional description about the project and its features.
 
@@ -21,7 +22,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://edxco.github.io/newsweek/)
+[Live Demo Link](https://edxco.github.io/conference-website/)
 
 ## Authors
 
