@@ -1,9 +1,7 @@
 @import "font";
 @import "colors";
 @import "animation";
-@import "join";
-
-$nav-height: 65px;
+@import "slider";
 
 /* General */
 body {
@@ -106,7 +104,7 @@ nav {
   }
 
   .nav-h {
-    height: $nav-height;
+    height: 65px;
   }
 }
 
@@ -124,89 +122,6 @@ nav {
   a:hover {
     background-color: $color-one;
   }
-}
-
-/* Slider */
-.slider-h {
-  height: 400px;
-}
-
-@mixin slider-prop($property, $height, $height-md, $height-xl) {
-  height: 400px;
-  background-image: url($property);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto $height;
-
-  @media (min-width: 768px) {
-    background-position: right;
-    background-size: auto $height-md;
-  }
-
-  @media (min-width: 992px) {
-    background-position: right;
-  }
-
-  @media (min-width: 1200px) {
-    background-position: right;
-    background-size: auto $height-xl;
-  }
-}
-
-.slider-g1 {
-  @include slider-prop("../img/slider1.png", 300px, 390px, 430px);
-}
-
-.slider-g2 {
-  @include slider-prop("../img/slider2.png", 320px, 435px, 450px);
-}
-
-.slider-g3 {
-  @include slider-prop("../img/slider3.png", 320px, 420px, 420px);
-
-  background-size: auto 300px;
-}
-
-.slider-h2 {
-  font-family: $regular-font;
-  font-size: 1.5em;
-
-  @media (min-width: 768px) {
-    font-size: 2em;
-  }
-}
-
-.bg-about {
-  background: url("../img/bg-about.png"), no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-
-.slider-text {
-  font-family: $coco-font;
-  font-size: 2.2em;
-  line-height: 45px;
-  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.88);
-
-  @media (min-width: 768px) {
-    font-size: 3.3em;
-    line-height: 75px;
-  }
-
-  @media (min-width: 992px) {
-    margin-top: 90px;
-    font-size: 3.9em;
-  }
-
-  @media (min-width: 1200px) {
-    margin-top: 80px;
-    font-size: 5.2em;
-    line-height: 88px;
-  }
-}
-
-.slider-ad {
-  background: url("../img/bg_transparentw.png");
 }
 
 /* program section */
@@ -243,11 +158,11 @@ nav {
       vertical-align: middle;
     }
   }
-/* stylelint-disable */
+  /* stylelint-disable */
   h3 a {
     color: $orange;
   }
-/* stylelint-enable */
+  /* stylelint-enable */
 }
 
 .about-res {
@@ -325,6 +240,11 @@ nav {
   @media (min-width: 1200px) {
     height: 36px;
   }
+}
+
+/* Join section */
+.prop-table {
+  font-size: 12px;
 }
 
 /* Footer */

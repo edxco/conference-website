@@ -1,21 +1,4 @@
-// =============================================================================
-// String Replace
-// =============================================================================
-
-@function str-replace($string, $search, $replace: "") {
-  $index: str-index($string, $search);
-
-  @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-  }
-
-  @return $string;
-}
-
-// =============================================================================
-// Font Face
-// =============================================================================
-
+// Font Face function to add local fonts
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
   $src: null;
 
@@ -43,14 +26,11 @@
   }
 }
 
-@include font-face("Cocogoose", "../fonts/Cocogoose");
-@include font-face("Cocogoose-Thin", "../fonts/CocogoosePro-Thin");
-
-$coco-font: 'Cocogoose', arial, helvetica, sans-serif;
-$thin-font: 'Cocogoose-Thin', arial, helvetica, sans-serif;
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+@include font-face("Cocogoose", "../fonts/Cocogoose");
+
+$coco-font: 'Cocogoose', arial, helvetica, sans-serif;
 $regular-font: 'Lato', sans-serif;
 
 @mixin regular-font-w($property) {

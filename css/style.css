@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @font-face {
   font-family: "Cocogoose";
-  src: url("../fonts/Cocogoose.eot?") format("eot"), url("../fonts/Cocogoose.woff2") format("woff2"), url("../fonts/Cocogoose.woff") format("woff"), url("../fonts/Cocogoose.ttf") format("truetype"), url("../fonts/Cocogoose.svg#Cocogoose") format("svg"); }
-
-@font-face {
-  font-family: "Cocogoose-Thin";
-  src: url("../fonts/CocogoosePro-Thin.eot?") format("eot"), url("../fonts/CocogoosePro-Thin.woff2") format("woff2"), url("../fonts/CocogoosePro-Thin.woff") format("woff"), url("../fonts/CocogoosePro-Thin.ttf") format("truetype"), url("../fonts/CocogoosePro-Thin.svg#Cocogoose-Thin") format("svg"); }
+  src: url("../fonts/Cocogoose.eot?") format("eot"), url("../fonts/Cocogoose.woff2") format("woff2"), url("../fonts/Cocogoose.woff") format("woff"), url("../fonts/Cocogoose.ttf") format("truetype"), url('../fonts/Cocogoose.svg#str-replace("Cocogoose", " ", "_")') format("svg"); }
 
 #screen {
   background: linear-gradient(-45deg, #fff, #d8d8d8, #787878, #9f9f9f);
@@ -21,8 +17,97 @@
   100% {
     background-position: 0% 50%; } }
 
-.prop-table {
-  font-size: 12px; }
+/* Slider */
+.slider-h {
+  height: 400px; }
+
+.slider-g1 {
+  height: 400px;
+  background-image: url("../img/slider1.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 300px; }
+  @media (min-width: 768px) {
+    .slider-g1 {
+      background-position: right;
+      background-size: auto 390px; } }
+  @media (min-width: 992px) {
+    .slider-g1 {
+      background-position: right; } }
+  @media (min-width: 1200px) {
+    .slider-g1 {
+      background-position: right;
+      background-size: auto 430px; } }
+
+.slider-g2 {
+  height: 400px;
+  background-image: url("../img/slider2.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 320px; }
+  @media (min-width: 768px) {
+    .slider-g2 {
+      background-position: right;
+      background-size: auto 435px; } }
+  @media (min-width: 992px) {
+    .slider-g2 {
+      background-position: right; } }
+  @media (min-width: 1200px) {
+    .slider-g2 {
+      background-position: right;
+      background-size: auto 450px; } }
+
+.slider-g3 {
+  height: 400px;
+  background-image: url("../img/slider3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 320px; }
+  @media (min-width: 768px) {
+    .slider-g3 {
+      background-position: right;
+      background-size: auto 420px; } }
+  @media (min-width: 992px) {
+    .slider-g3 {
+      background-position: right; } }
+  @media (min-width: 1200px) {
+    .slider-g3 {
+      background-position: right;
+      background-size: auto 420px; } }
+
+.slider-h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em; }
+  @media (min-width: 768px) {
+    .slider-h2 {
+      font-size: 2em; } }
+
+.bg-about {
+  background: url("../img/bg-about.png"), no-repeat;
+  background-size: cover;
+  background-position: top; }
+
+.slider-text {
+  font-family: "Cocogoose", arial, helvetica, sans-serif;
+  font-size: 2.2em;
+  line-height: 45px;
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.88); }
+  @media (min-width: 768px) {
+    .slider-text {
+      font-size: 3.3em;
+      line-height: 75px; } }
+  @media (min-width: 992px) {
+    .slider-text {
+      margin-top: 90px;
+      font-size: 3.9em; } }
+  @media (min-width: 1200px) {
+    .slider-text {
+      margin-top: 80px;
+      font-size: 5.2em;
+      line-height: 88px; } }
+
+.slider-ad {
+  background: url("../img/bg_transparentw.png"); }
 
 /* General */
 body {
@@ -118,99 +203,6 @@ nav .nav-h {
   .join-us a:hover {
     background-color: #272a31; }
 
-/* Slider */
-.slider-h {
-  height: 400px; }
-
-.slider-g1 {
-  height: 400px;
-  background-image: url("../img/slider1.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto 300px; }
-  @media (min-width: 768px) {
-    .slider-g1 {
-      background-position: right;
-      background-size: auto 390px; } }
-  @media (min-width: 992px) {
-    .slider-g1 {
-      background-position: right; } }
-  @media (min-width: 1200px) {
-    .slider-g1 {
-      background-position: right;
-      background-size: auto 430px; } }
-
-.slider-g2 {
-  height: 400px;
-  background-image: url("../img/slider2.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto 320px; }
-  @media (min-width: 768px) {
-    .slider-g2 {
-      background-position: right;
-      background-size: auto 435px; } }
-  @media (min-width: 992px) {
-    .slider-g2 {
-      background-position: right; } }
-  @media (min-width: 1200px) {
-    .slider-g2 {
-      background-position: right;
-      background-size: auto 450px; } }
-
-.slider-g3 {
-  height: 400px;
-  background-image: url("../img/slider3.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto 320px;
-  background-size: auto 300px; }
-  @media (min-width: 768px) {
-    .slider-g3 {
-      background-position: right;
-      background-size: auto 420px; } }
-  @media (min-width: 992px) {
-    .slider-g3 {
-      background-position: right; } }
-  @media (min-width: 1200px) {
-    .slider-g3 {
-      background-position: right;
-      background-size: auto 420px; } }
-
-.slider-h2 {
-  font-family: "Lato", sans-serif;
-  font-size: 1.5em; }
-  @media (min-width: 768px) {
-    .slider-h2 {
-      font-size: 2em; } }
-
-.bg-about {
-  background: url("../img/bg-about.png"), no-repeat;
-  background-size: cover;
-  background-position: top; }
-
-.slider-text {
-  font-family: "Cocogoose", arial, helvetica, sans-serif;
-  font-size: 2.2em;
-  line-height: 45px;
-  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.88); }
-  @media (min-width: 768px) {
-    .slider-text {
-      font-size: 3.3em;
-      line-height: 75px; } }
-  @media (min-width: 992px) {
-    .slider-text {
-      margin-top: 90px;
-      font-size: 3.9em; } }
-  @media (min-width: 1200px) {
-    .slider-text {
-      margin-top: 80px;
-      font-size: 5.2em;
-      line-height: 88px; } }
-
-.slider-ad {
-  background: url("../img/bg_transparentw.png"); }
-
 /* program section */
 #program-section {
   background-color: #272a31;
@@ -301,6 +293,10 @@ nav .nav-h {
   @media (min-width: 1200px) {
     .partner-img {
       height: 36px; } }
+
+/* Join section */
+.prop-table {
+  font-size: 12px; }
 
 /* Footer */
 .footer-img {
