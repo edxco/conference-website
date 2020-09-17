@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @font-face {
   font-family: "Cocogoose";
-  src: url("../fonts/Cocogoose.eot?") format("eot"), url("../fonts/Cocogoose.woff2") format("woff2"), url("../fonts/Cocogoose.woff") format("woff"), url("../fonts/Cocogoose.ttf") format("truetype"), url('../fonts/Cocogoose.svg#str-replace("Cocogoose", " ", "_")') format("svg"); }
+  src: url("../fonts/Cocogoose.eot?") format("eot"), url("../fonts/Cocogoose.woff2") format("woff2"), url("../fonts/Cocogoose.woff") format("woff"), url("../fonts/Cocogoose.ttf") format("truetype"), url("../fonts/Cocogoose.svg#Cocogoose") format("svg"); }
 
 #screen {
   background: linear-gradient(-45deg, #fff, #d8d8d8, #787878, #9f9f9f);
