@@ -32,7 +32,7 @@ Additional description about the project and its features.
 
 ## Acknowledgment
 
-- Layout design by Cindy Shin (https://www.behance.net/gallery/29845175/CC-Global-Summit-2015]
+- Layout design by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## Show your support
 
