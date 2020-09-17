@@ -118,49 +118,41 @@
         </section>
         <!-- Tickets Section -->
         <section class="py-4 py-md-5 m-0 border-bottom bg-light">
-            <h2 class="text-center text-dark title-section mb-4">Select Tickets</h2>
+            <h2 class="text-center text-dark title-section mb-4">Select
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                Tickets</h2>
             <div class="container">
                 <div class="card-group">
                     <div class="card">
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th class="text-center d-md-none d-lg-block" scope="col">Ticket</th>
+                                    <th class="text-center d-sm-none d-lg-block" scope="col">Ticket</th>
                                     <th class="text-center" colspan="2">1 Day Ticket</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="h-table">
-                                    <th class="text-center d-md-none d-lg-block" scope="row">Date</th>
-                                    <td class="text-center"><span class="prop-table">Jun 15th <b>2021</b></span></td>
-                                    <td class="text-center"><span class="prop-table">Jun 16th <b>2021</b></span></td>
+                                    <th class="text-center d-sm-none d-lg-block" scope="row">Date</th>
+                                    <td class="text-center"><span class="prop-table">Jun 15th </span></td>
                                 </tr>
                                 <tr>
-                                    <th class="text-center d-md-none d-lg-block" scope="row">Normal</th>
+                                    <th class="text-center d-sm-none d-lg-block" scope="row">Normal</th>
                                     <td class="text-center p-1 py-md-3">
-                                        <div class="input-group-text w-100 mx-auto">
-                                            <input type="radio" name="oneday" class="mr-1 mr-md-3">
+                                        <div class="input-group-text w-75 mx-auto">
+                                            <input type="radio" name="oneday" class="mr-1 mr-md-2 mr-lg-4">
                                             $150
                                         </div>
                                     </td>
-                                    <td class="text-center p-1 py-md-3">
-                                        <div class="input-group-text w-100 mx-auto">
-                                            <input type="radio" name="oneday" class="mr-1 mr-md-3">
-                                            $150
-                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="text-center d-md-none d-lg-block" scope="row">Students</th>
+                                    <th class="text-center d-sm-none d-lg-block" scope="row">Students</th>
                                     <td class="text-center p-1 py-md-3">
-                                        <div class="input-group-text w-100 mx-auto">
-                                            <input type="radio" name="oneday" class="mr-1 mr-md-3">
-                                            $110
-                                        </div>
-                                    </td>
-                                    <td class="text-center p-1 py-md-3">
-                                        <div class="input-group-text w-100 mx-auto">
-                                            <input type="radio" name="oneday" class="mr-1 mr-md-3">
+                                        <div class="input-group-text w-75 mx-auto">
+                                            <input type="radio" name="oneday" class="mr-1 mr-md-2 mr-lg-4">
                                             $110
                                         </div>
                                     </td>
@@ -172,18 +164,53 @@
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th class="text-center d-md-none" scope="row">Ticket</th>
+                                    <th class="text-center d-sm-none" scope="row">Ticket</th>
+                                    <th class="text-center" scope="col">1 Day Ticket</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="h-table">
+                                    <th class="text-center d-sm-none" scope="row">Date</th>
+                                    <td class="text-center"><span class="prop-table">Jun 16th </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center d-sm-none" scope="row">Normal</th>
+                                    <td class="text-center p-1 py-md-3">
+                                        <div class="input-group-text w-75 mx-auto">
+                                            <input type="radio" name="twoday" class="mr-3">
+                                            $150
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center d-sm-none" scope="row">Students</th>
+                                    <td class="text-center p-1 py-md-3">
+                                        <div class="input-group-text w-75 mx-auto">
+                                            <input type="radio" name="twoday" class="mr-3">
+                                            $110
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-center d-sm-none" scope="row">Ticket</th>
                                     <th class="text-center" scope="col">2 Days Ticket</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="h-table">
-                                    <th class="text-center d-md-none" scope="row">Date</th>
-                                    <td class="text-center"><span class="prop-table">Jun 15th & 16th <b>2021</b></span>
+                                    <th class="text-center d-sm-none" scope="row">Date</th>
+                                    <td class="text-center"><span class="prop-table">Jun 15th & 16th </span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="text-center d-md-none" scope="row">Normal</th>
+                                    <th class="text-center d-sm-none" scope="row">Normal</th>
                                     <td class="text-center p-1 py-md-3">
                                         <div class="input-group-text w-75 mx-auto">
                                             <input type="radio" name="twoday" class="mr-3">
@@ -192,7 +219,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="text-center d-md-none" scope="row">Students</th>
+                                    <th class="text-center d-sm-none" scope="row">Students</th>
                                     <td class="text-center p-1 py-md-3">
                                         <div class="input-group-text w-75 mx-auto">
                                             <input type="radio" name="twoday" class="mr-3">
@@ -207,18 +234,18 @@
                         <table class="table">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th class="text-center d-md-none" scope="row">Ticket</th>
+                                    <th class="text-center d-sm-none" scope="row">Ticket</th>
                                     <th class="text-center" scope="col">VIPs & Press</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th class="text-center d-md-none" scope="row">Date</th>
-                                    <td class="text-center"><span class="prop-table">Jun 15th & 16th <b>2021</b></span>
+                                    <th class="text-center d-sm-none" scope="row">Date</th>
+                                    <td class="text-center"><span class="prop-table">Jun 15th & 16th </span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="text-center d-md-none" scope="row">Normal</th>
+                                    <th class="text-center d-sm-none" scope="row">Normal</th>
                                     <td class="text-center p-1 py-md-3">
                                         <div class="input-group-text w-75 mx-auto">
                                             <input type="radio" name="twoday" class="mr-3">
@@ -227,7 +254,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th class="text-center d-md-none" scope="row">Students</th>
+                                    <th class="text-center d-sm-none" scope="row">Students</th>
                                     <td class="text-center p-1 py-md-3">
                                         <div class="input-group-text w-75 mx-auto">
                                             <input type="radio" name="twoday" class="mr-3">
@@ -251,7 +278,7 @@
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th class="text-center" scope="col">Jun 15th <b>2021</b></th>
+                                        <th class="text-center" scope="col">Jun 15th </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -278,7 +305,7 @@
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th class="text-center" scope="col">Jun 16th <b>2021</b></th>
+                                        <th class="text-center" scope="col">Jun 16th </th>
                                     </tr>
                                 </thead>
                                 <tbody>
