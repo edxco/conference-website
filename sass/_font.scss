@@ -1,0 +1,47 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@include font-face("Cocogoose", "../fonts/Cocogoose");
+
+$coco-font: 'Cocogoose', arial, helvetica, sans-serif;
+$regular-font: 'Lato', sans-serif;
+
+@mixin regular-font-w($property) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $property;
+}
+
+$f10: 10px;
+$f12: 12px;
+$f14: 14px;
+$f16: 16px;
+$f17: 17px;
+$f18: 18px;
+$f20: 20px;
+$f24: 24px;
